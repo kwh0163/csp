@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\CSpractice\CSpractice\bin\Debug\net6.0\CSpractice.exe
+C:\Users\PC\Desktop\CSpractice\CSpractice\bin\Debug\net6.0\CSpractice.deps.json
+C:\Users\PC\Desktop\CSpractice\CSpractice\bin\Debug\net6.0\CSpractice.runtimeconfig.json
+C:\Users\PC\Desktop\CSpractice\CSpractice\bin\Debug\net6.0\CSpractice.dll
+C:\Users\PC\Desktop\CSpractice\CSpractice\bin\Debug\net6.0\CSpractice.pdb
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.AssemblyInfo.cs
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.dll
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\refint\CSpractice.dll
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.pdb
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\CSpractice.genruntimeconfig.cache
+C:\Users\PC\Desktop\CSpractice\CSpractice\obj\Debug\net6.0\ref\CSpractice.dll
