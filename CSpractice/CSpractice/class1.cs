@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class FirstLecture{
+public class class1{
     //static void Main(string[] args)
     //프로그램 실행되는 진입점
     //Main() 함수 안에서 실행해야 프로그램이 실행됨
-    public FirstLecture()
+    public class1()
     {
         #region C# 기초
             /*

@@ -1,7 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
-public class SecondLecture
+public class class2
 {
     class Monster
     {
@@ -14,7 +18,7 @@ public class SecondLecture
         }
     }
 
-    public SecondLecture()
+    public class2()
     {
         //값 타입
         //변수의 선언과 동시에 값을 할당할 수 있으며 스택 메모리에 생성됨

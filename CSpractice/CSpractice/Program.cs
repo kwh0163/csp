@@ -1,96 +1,90 @@
 ﻿using System;
 
 namespace ConsoleGame{
-
-    class Solution
-    {
-        public void Function()
-        {
-            Console.WriteLine("Function");
-        }
-
-        public static void Post()
-        {
-            Console.WriteLine("Static Post");
-        }
-
-        public int Calculator()
-        {
-            //반환하는 메소드의 자료형과 반환하는 값의 자료형이 일치해야 한다.
-            return 0;
-        }
-
-        public void Swap(int x, int y)
+    class Function{
+        public void Change(ref int x, ref int y)
         {
             int temp = x;
             x = y;
             y = temp;
         }
 
+        //out 키워드
+        //out 매개변수의 메소드 내부에서 값을 무조건 초기화해야 한다.
+        public void Output(out int x)
+        {
+            //out은 함수 내부에서 함수 외부로 전달하는 방향이다.
+            x = 1000;
+        }
+
+        //in 키워드
+        public void ItemList(in int x)
+        {
+            //in은 메소드 내부에서 값을 수정할 수 없다.
+            //x = 500;
+            Console.WriteLine("x : " + x);
+        }
+
+        //params 키워드
+        public void StatList(params int[] list)
+        {
+            for (int i = 0; i < list.Length; i++)
+            {
+                Console.WriteLine("list["+ i+"]"+" : "+list[i]);
+            }
+        }
     }
 
-   
-
     internal class Program{
-        //Program 메모리 할당
-
-        
         static void Main(string[] args){
-            #region 박싱
+            #region 매개 변수 한정자
             /*
-            //박싱(boxing)
-            
-            //값 형식을 참조 형식으로 변환해주는 과정
-
-            int value = 10;
-
-            //암묵적으로 형 변환됨
-
-            //object가 값 타입보다 상위의 자료형이기 때문에
-            //암묵적으로 형 변환이 가능하다.
-            object obj = value;
-
-            obj = 300;
-
-            //박싱을 하는 과정에서 추가적인 메모리가 발생한다.
-            Console.WriteLine("obj의 값 : " + obj);
-            Console.WriteLine("value의 값 : " + value);
-            */
-            #endregion
-
-            #region 언박싱
-            /*
-            //언박싱(UnBoxing)
-            //참조 타입을 값 타입으로 변환하는 과정이다.
-            
-            //data 변수가 값 타입이므로, obj 참조 타입보다
-            //하위 자료형이기 때문에 명시적으로 형 변환을 해줘야 한다.
-            int data = (int)obj;
-
-            //언박싱 변환 시 스택메모리에 언박싱된 무명객체가 생성되며
-            //이 무명객체를 다시 해당 객체에 대입하는 원리이다.
-            Console.WriteLine("data의 값 : " + data);
-
-            int [] dataTable = new object[5];
-            dataTable[0] = 10;
-            dataTable[1] = "Sword";
-            dataTable[2] = 36.5f;
-            dataTable[3] = 'A';
-            dataTable[4] = true;
-            */
-            #endregion
-
-            Solution.Post();
-
             int value1 = 10;
             int value2 = 20;
 
-            Solution solution = new Solution();
-            solution.Function();
-            solution.Swap(value1, value2);
-            Console.WriteLine("value1 : " + value1 + ", value2 : " + value2);
-            Console.WriteLine(solution.Calculator());
+            int data;
+            int item = 10;
+            
+            //ref 키워드
+            //매개 변수가 참조로 전달할 수 있고, 호출된 메소드로 읽거나
+            //쓸 수 있는 한정자이다.
+            Function function = new Function();
 
+            //ref 키워드는 인수로 전달하는 변수의 값이 초기화가 되어 있어야 한다.
+            function.Change(ref value1, ref value2);
+
+            Console.WriteLine("value1 : " + value1);
+            Console.WriteLine("value2 : " + value2);
+
+            //out 키워드 (출력용 매개변수)
+            //매개 변수가 참조로 전달할 수 있고, 호출된 메소드에 의해서
+            //기록되도록 지정하는 한정자이다.
+            function.Output(out data);
+            Console.WriteLine("data : " + data);
+
+            //in 키워드
+            //매개 변수를 참조로 전달할 수 있지만, 호출된 메소드에서
+            //읽기만 가능한 한정자이다.
+            function.ItemList(in item);
+            Console.WriteLine("item : " + item);
+
+            //params 키워드
+            //매개 변수가 가변 개수의 인수를 사용할 수 있도록 지정해주는 한정자이다.
+            function.StatList(1, 2, 3, 4, 5);
+            //인수를 전달하지 않으면 배열의 길이는 0으로 설정됨
+            function.StatList();
+            */
+            #endregion
+
+            var name = "kimwoohyup";
+            var age = 10;
+            var health = 100.0;
+            var alphabet = 'A';
+
+            Console.WriteLine("name의 값 : " + name);
+            Console.WriteLine("age의 값 : " + age);
+            Console.WriteLine("health의 값 : " + health);
+            Console.WriteLine("alphabet의 값 : " + alphabet);
 
         }
     }
