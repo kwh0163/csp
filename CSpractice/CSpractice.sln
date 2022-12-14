@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSpractice", "CSpractice\CSpractice.csproj", "{907612D9-ED55-4475-A271-38532C12C580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSpractice", "CSpractice\CSpractice.csproj", "{907612D9-ED55-4475-A271-38532C12C580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureResource", "LectureResource\LectureResource.csproj", "{E1FFCC41-CB2E-4415-B30D-8CF8A759A958}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{907612D9-ED55-4475-A271-38532C12C580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{907612D9-ED55-4475-A271-38532C12C580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{907612D9-ED55-4475-A271-38532C12C580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FFCC41-CB2E-4415-B30D-8CF8A759A958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FFCC41-CB2E-4415-B30D-8CF8A759A958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FFCC41-CB2E-4415-B30D-8CF8A759A958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FFCC41-CB2E-4415-B30D-8CF8A759A958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

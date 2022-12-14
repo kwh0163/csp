@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\bin\Debug\net6.0\LectureResource.exe
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\bin\Debug\net6.0\LectureResource.deps.json
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\bin\Debug\net6.0\LectureResource.runtimeconfig.json
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\bin\Debug\net6.0\LectureResource.dll
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\bin\Debug\net6.0\LectureResource.pdb
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.AssemblyInfo.cs
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.dll
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\refint\LectureResource.dll
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.pdb
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\LectureResource.genruntimeconfig.cache
+C:\Users\PC\Desktop\csp\CSpractice\LectureResource\obj\Debug\net6.0\ref\LectureResource.dll
