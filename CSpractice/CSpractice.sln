@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSpractice", "CSpractice\CS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LectureResource", "LectureResource\LectureResource.csproj", "{E1FFCC41-CB2E-4415-B30D-8CF8A759A958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namespace", "Namespace\Namespace.csproj", "{A59DE244-231B-4046-B9BB-4D5F2E701712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namespace", "Namespace\Namespace.csproj", "{A59DE244-231B-4046-B9BB-4D5F2E701712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property", "Property\Property.csproj", "{30D46352-A045-4236-AD72-095AB966C53B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A59DE244-231B-4046-B9BB-4D5F2E701712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A59DE244-231B-4046-B9BB-4D5F2E701712}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A59DE244-231B-4046-B9BB-4D5F2E701712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D46352-A045-4236-AD72-095AB966C53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D46352-A045-4236-AD72-095AB966C53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D46352-A045-4236-AD72-095AB966C53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D46352-A045-4236-AD72-095AB966C53B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
