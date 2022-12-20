@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Consolegame
+namespace ConsoleGame
 {
     internal class Program
     {
