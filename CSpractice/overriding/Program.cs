@@ -71,20 +71,24 @@ namespace ConsoleGame
         static void Main(string[] args)
         {
             #region 메소드 숨기기 & 오버라이딩
-            // Animal animal = new Animal();
-            // animal.Action(); // 동물의 행동
-            // animal.Sound();  // 동물의 울음소리
+            /*
+             Animal animal = new Animal();
+            animal.Action(); // 동물의 행동
+            animal.Sound();  // 동물의 울음소리
 
-            // Dog dog = new Dog();
-            // dog.Action(); // 강아지의 행동
-            // dog.Sound();  // 멍~멍~
+            Dog dog = new Dog();
+            dog.Action(); // 강아지의 행동
+            dog.Sound();  // 멍~멍~
 
-            // Animal parent = new Dog();
-            // 런타임 중에 어떤 함수를 호출할 지 결정하는 행위 
-            // parent.Action(); // 강아지의 행동
-            // parent.Sound(); // 동물의 울음소리
+            Animal parent = new Dog();
+            런타임 중에 어떤 함수를 호출할 지 결정하는 행위
+             parent.Action(); // 강아지의 행동
+            parent.Sound(); // 동물의 울음소리
+            */
             #endregion
 
+            #region 매개변수
+            /*
             // 선택적 매개변수
             Function(10); // x(10), y(100) 
             Function(50, 500); // x(50), y(500)
@@ -93,6 +97,8 @@ namespace ConsoleGame
             Information("kim", 10, 'O');
 
             Information(age: 20, blood: 'A', name: "son");
+            */
+            #endregion
         }
     }
 }

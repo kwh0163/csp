@@ -89,6 +89,8 @@ namespace ConsoleGame
         static void Main(string[] args)
         {
             //상속
+            #region 상속
+            /*
             //상위 클래스의 속성을 하위클래스가
             //사용할 수 있도록 설정해주는 기능
             Parent parent = new Parent("Parent");
@@ -100,7 +102,8 @@ namespace ConsoleGame
             vector.Coordinate(10.5f, 20.5f);
             vector.Coordinate(10.5f, 20.5f, 30.5f);
             vector.Coordinate(10, 20);
-
+            */
+            #endregion
 
 
 
