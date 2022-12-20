@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Property", "Property\Proper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vector", "ConsoleApp1\vector.csproj", "{AC58547C-C6DB-466B-A784-A13279E457BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "overriding", "overriding\overriding.csproj", "{5EE0FEE6-E819-41D7-AB50-0A4DC7BE7FDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AC58547C-C6DB-466B-A784-A13279E457BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC58547C-C6DB-466B-A784-A13279E457BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC58547C-C6DB-466B-A784-A13279E457BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE0FEE6-E819-41D7-AB50-0A4DC7BE7FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE0FEE6-E819-41D7-AB50-0A4DC7BE7FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE0FEE6-E819-41D7-AB50-0A4DC7BE7FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE0FEE6-E819-41D7-AB50-0A4DC7BE7FDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
