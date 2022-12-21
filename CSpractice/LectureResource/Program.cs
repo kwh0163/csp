@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleGame
+namespace LectureResource
 {
     class Function
     {

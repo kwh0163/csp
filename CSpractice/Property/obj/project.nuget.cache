@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8X9So3qgUWKpl7gCVjhyrmrKvBXCQ6Gr2HJa3v2uzVcx46mObOkVtW7MxplNyEAjc6mvKN2qRSAkr+UEorWnMQ==",
+  "dgSpecHash": "tSSNwhZmQKFjAOKtmNzdfKDpYM4XTyUmFHj6YUVjRWKY84MoUGmdmnf3/EvyDG784MCKxDbWpCeHZCx9aZmAgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Source\\Repos\\kwh0163\\csp\\CSpractice\\Property\\Property.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\Property\\Property.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

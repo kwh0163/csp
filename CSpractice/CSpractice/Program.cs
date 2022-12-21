@@ -5,115 +5,106 @@ using System.Text;
 
 namespace ConsoleGame
 {
-    //인터페이스
-    //클래스들이 구현해야하는 동작을 지정하는 용도로 사용되는 추상 자료형이다.
-    interface IMonitor
-    {
-        //인터페이스는 메소드를 선언만 할 수 있다.
-        void Power();
-    }
-
-    interface IMouse 
-    {
-        //인터페이스는 멤버 변수를 가질 수 없다.
-        //int value;
-        //인터페이스는 프로퍼티를 가질 수 있다.
-        //int Damage {set;get;}
-
-        void Click();
-    }
-
-    class Computer : IMonitor, IMouse
-    {
-        public void Click()
+    class Watch
+    { 
+        //readonly : 런타임 시점에 결정되는 상수
+        //상수를 초기화하지 않아도 사용할 수 있다.
+        readonly int count;
+        public Watch()
         {
-            Console.WriteLine("마우스 클릭");
-        }
-
-        public void Power()
-        {
-            Console.WriteLine("모니터 전원 on");
+            //생성자에서 단 한번만 값을 초기화할 수 있다.
+            count = 100;
+            Console.WriteLine("count의 값 : " + count);
         }
     }
 
-    interface IObject
-    {
-        void HealthManager();
-    }
+    //델리게이트 선언
+    //delegate[반환형] [델리게이트 이름] (매개변수)
+    delegate void Calculator(int x, int y);
 
-    class Player : IObject
+    //델리게이트는 메소드의 반환형과 매개변수의 타입이 일치해야 사용할 수 있다.
+
+    class Weapon
     {
-        public int hp;
-        public void HealthManager()
+        public void Stat(int x, int y)
         {
-            hp -= 50;
-            Console.WriteLine("Player의 체력이 감소되었습니다. hp : " + hp);
+            int result = x + y;
+            Console.WriteLine("Stat 메소드 : " + result);
         }
-    }
 
-    class Monster : IObject
-    {
-        public int hp;
-
-        public void HealthManager()
+        public void Price(int x, int y)
         {
-            hp -= 25;
-            Console.WriteLine("Monster의 체력이 감소되었습니다. hp : " + hp);
+            int result = x - y;
+            Console.WriteLine("Price 메소드 : " + result);
         }
-    }
 
-    class NPC : IObject
-    {
-        public int hp;
-        public void HealthManager()
+        public void Damage(int x, int y)
         {
-            hp -= 70;
-            Console.WriteLine("NPC의 체력이 감소되었습니다. hp : " + hp);
+            int result = x * y;
+            Console.WriteLine("Damage 메소드 : " + result);
         }
+
     }
-
-    class Damage
-    {
-        public void DecreaseHP(IObject iobject)
-        {
-            iobject.HealthManager();
-        }
-    }
-
-
-
-
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            #region 인터페이스
+            #region 상수
             /*
-            Computer computer = new Computer();
-            computer.Power();
-            computer.Click();
+            //상수
+            //프로그램이 실행되는 동안 변하지 않는 값
+            //ex) const, readonly
 
-            //인터페이스는 객체로 인스턴스 할 수 없다.
-            //IMouse mouse = new IMouse();
+            //const : 컴파일 시점에 결정되는 상수
+            //상수를 선언과 동시에 초기화를 해주어야 한다.
+            const int value = 10;
+            //value = 20; 이미 상수로 지정되어 값 변경 불가능
 
-            IMouse lg = new Computer();
-            lg.Click();
+            //자주 바뀌는 상수는 const 대신 readonly를 사용하는 편이 좋음
+
+            Console.WriteLine("value : " + value);
+            Watch watch = new Watch();
             */
             #endregion
 
+            #region 델리게이트
+            /*
+            //델리게이트(대리자)
+            //매서드를 대신해서 호출하는 기법이다.
+            Weapon weapon = new Weapon();
 
-            Monster goblin = new Monster();
-            goblin.hp = 100;
-            Monster slime = new Monster();
-            Player player = new Player();
-            player.hp = 100;
+            //델리게이크 정의
+            Calculator calculator;
+            //델리게이트 변수에 함수 주소 저장
+            calculator = weapon.Stat;
+            calculator(10, 20);
 
-            Damage damage = new Damage();
-            damage.DecreaseHP(goblin);
-            damage.DecreaseHP(player);
+            calculator = weapon.Price;
+            calculator(10, 20);
 
+            calculator = weapon.Damage;
+            calculator(10,20);
+            */
+            #endregion
 
+            //델리게이트 체인
+            //하나의 델리게이트에 여러 개의 메소드를 연결시키는 기법
+
+            Weapon weapon = new Weapon();
+
+            Calculator calculator;
+
+            //델리게이트는 비어있는 상태에서 메소드를 추가할 수 없다.
+            calculator = weapon.Stat;
+            calculator += weapon.Price;
+            calculator += weapon.Damage;
+
+            calculator(10, 20);
+
+            calculator -= weapon.Price;
+
+            calculator(10, 20);
 
         }
     }

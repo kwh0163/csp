@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace ConsoleGame
-{
+namespace overriding 
+{ 
     // 오버라이딩
     // 상위 클래스에 있는 메소드를 하위 클래스에서
     // 재정의하여 사용하는 기능입니다.

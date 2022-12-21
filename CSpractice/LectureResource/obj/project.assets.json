@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\kwh0163\\csp\\CSpractice\\LectureResource\\LectureResource.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\LectureResource\\LectureResource.csproj",
       "projectName": "LectureResource",
-      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\kwh0163\\csp\\CSpractice\\LectureResource\\LectureResource.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\LectureResource\\LectureResource.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\kwh0163\\csp\\CSpractice\\LectureResource\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\LectureResource\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
