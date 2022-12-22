@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vector", "ConsoleApp1\vecto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "overriding", "overriding\overriding.csproj", "{5EE0FEE6-E819-41D7-AB50-0A4DC7BE7FDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{591BF172-32F0-4236-B634-71F7B06AFB9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{591BF172-32F0-4236-B634-71F7B06AFB9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delegate.csproj", "{A17CB4A5-1077-4408-B1EB-7CF4B79F2292}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{591BF172-32F0-4236-B634-71F7B06AFB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591BF172-32F0-4236-B634-71F7B06AFB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591BF172-32F0-4236-B634-71F7B06AFB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17CB4A5-1077-4408-B1EB-7CF4B79F2292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17CB4A5-1077-4408-B1EB-7CF4B79F2292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17CB4A5-1077-4408-B1EB-7CF4B79F2292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17CB4A5-1077-4408-B1EB-7CF4B79F2292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

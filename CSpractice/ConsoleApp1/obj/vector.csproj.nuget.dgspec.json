@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\ConsoleApp1\\vector.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\ConsoleApp1\\vector.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\ConsoleApp1\\vector.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\ConsoleApp1\\vector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\ConsoleApp1\\vector.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\ConsoleApp1\\vector.csproj",
         "projectName": "vector",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\ConsoleApp1\\vector.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\ConsoleApp1\\vector.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

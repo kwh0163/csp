@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\Namespace\\Namespace.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\Namespace\\Namespace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\Namespace\\Namespace.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\Namespace\\Namespace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\Namespace\\Namespace.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\Namespace\\Namespace.csproj",
         "projectName": "Namespace",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\Namespace\\Namespace.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\Namespace\\Namespace.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\Namespace\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\Namespace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

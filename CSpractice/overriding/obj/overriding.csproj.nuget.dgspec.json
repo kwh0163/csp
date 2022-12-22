@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\overriding\\overriding.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\overriding\\overriding.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\overriding\\overriding.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\overriding\\overriding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\overriding\\overriding.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\overriding\\overriding.csproj",
         "projectName": "overriding",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\overriding\\overriding.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\overriding\\overriding.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\csp\\CSpractice\\overriding\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\kwh\\CSpractice\\overriding\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
