@@ -1,39 +1,40 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Reflection.PortableExecutable;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace ConsoleGame
 {
-    delegate void Delegate();
-
-    class IPhone
+    class Machine
     {
-        public int price;
-        public int version;
-
-        public IPhone(int _price, int _version)
+        //형식 매개변수란?
+        //함수에 형식을 지정하지 않아도 호출 시에 형식만 지정하면
+        //어떤 형식이든 사용할 수 있는 매개변수이다.
+        public void Driving<T>(T x)
         {
-            this.price = _price;
-            this.version = _version;
+            Console.WriteLine($"x의 값 : {x}");
+        }
+
+        public T Process<T>(T x)
+        {
+            return x;
         }
 
     }
 
-    class Galaxy 
+    class STL<T> where T : class
     {
-        public int price;
-        public int version;
-
-        public Galaxy DeepCopy()
+        public void Push<V>(V x)
         {
-            Galaxy newGalaxy = new Galaxy();
-            newGalaxy.price = this.price;
-            newGalaxy.version = this.version;
-
-            return newGalaxy;
+            Console.WriteLine("Push : " + x);
         }
 
+        public V Pop<V>(V x)
+        {
+            return x;
+        }
     }
 
 
@@ -41,69 +42,55 @@ namespace ConsoleGame
     {
         static void Main(string[] args)
         {
-            #region 무명 형식
+            #region 일반화 프로그래밍
             /*
-            //무명 형식
-            //이름이 없는 데이터 형식
-            //임시 변수가 필요할 때 사용하는 형식 -- 임시변수 : 임시로 생성해서 사용 후, 더이상 사용되지 않는 변수
+            //일반화 프로그래밍
+            //데이터 형식에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입들을
+            //가질 수 있는 기술에 중점을 두어 재사용성을 높일 수 있는 프로그래밍 방법
 
-            var temp = new { age = 40, name = "Kim" };
+            Machine machine = new Machine();
 
-            //무명 형식으로 생성된 인스턴스는 읽기 전용이기 때문에 값을 변경할 수 없다.
-            //temp.age = 30 <-(X)
+            machine.Driving(10);
+            machine.Driving(5.8346);
+            machine.Driving('W');
+            machine.Driving("string");
 
-            Console.WriteLine("temp의 age : " + temp.age + "\ntemp의 name : "+temp.name);
+            //형식 매개변수는 컴파일 시에 자료형을 결정한다.
+            int num1 = machine.Process(300);
+            float num2 = machine.Process(6.771f);
+            char num3 = machine.Process('Y');
+            string num4 = machine.Process("soccer");
+
+            //형식 매개변수의 경우 박싱, 언박싱이 일어나지 않는다.
+            machine.Driving(num1);
+            machine.Driving(num2);
+            machine.Driving(num3);
+            machine.Driving(num4);
+
+            STL<int> stack = new STL<int>();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+
+            stack.Pop(1);
+            stack.Pop(2);
+            stack.Pop(3);
             */
             #endregion
 
-            #region 무명 메소드
-            /*
-            //무명 메소드
-            //단순한 명령어 구문으로 구성된 메소드를 정의하지 않고
-            //델리게이트를 사용하여 1회용으로 사용하는 메소드
-            Delegate value;
+            //형식 범위 제한
+            //특정 형식으로 제한할 때 사용하는 키워드
 
-            value = () => { Console.WriteLine("로그인 실패"); };
-            value += () => { Console.WriteLine("오류"); };
-            value();
-            value();
-            value();
-            */
-            #endregion
+            STL<string> queue = new STL<string>();
+            queue.Push("Game");
 
-            #region 얕은 복사
-            /*
-            //얕은 복사
-            //객체를 복사할 때 주소값을 복사하여 같은 메모리를 가리키는 복사
-            IPhone se1 = new IPhone(20000,1);
-            IPhone se2 = se1;
-            
-            se2.version = 2;
-            se2.price = 100000;
-
-            Console.WriteLine("se1의 버전 : " + se1.version);
-            Console.WriteLine("se1의 가격 : " + se1.price);
-            Console.WriteLine("se2의 버전 : " + se2.version);
-            Console.WriteLine("se2의 가격 : " + se2.price);
-            */
-            #endregion
-
-            //깊은 복사
-            //객체를 복사할 때, 참조값이 아닌 인스턴스 자체를
-            //새로 복사하여 서로 다른 메모리를 생성하는 복사
-
-            Galaxy S1 = new Galaxy();
-            S1.price = 20000;
-            S1.version = 1;
-
-            Galaxy S2 = S1.DeepCopy();
-            S2.price = 100000;
+            //struct : 값 형식의 데이터만 가능하다.
+            //class : 참조 형식의 데이터만 가능하다.
+            //new() : 매개변수가 없는 생성자가 반드시 존재해야 가능하다.
+            //상위클래스(이름) : 해당 상위 클래스의 파생 클래스여야 가능하다.
+            //interface(이름) : 해당 인터페이스를 구현한 클래스여야 가능하다.
 
 
-            Console.WriteLine("S1 version : " + S1.version);
-            Console.WriteLine("S1 price : " + S1.price);
-            Console.WriteLine("S2 version : " + S2.version);
-            Console.WriteLine("S2 price : " + S2.price);
 
         }
     }
