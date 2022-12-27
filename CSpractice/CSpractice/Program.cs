@@ -4,91 +4,116 @@ using System.Reflection.PortableExecutable;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace ConsoleGame
 {
-    class Machine
-    {
-        //형식 매개변수란?
-        //함수에 형식을 지정하지 않아도 호출 시에 형식만 지정하면
-        //어떤 형식이든 사용할 수 있는 매개변수이다.
-        public void Driving<T>(T x)
-        {
-            Console.WriteLine($"x의 값 : {x}");
-        }
-
-        public T Process<T>(T x)
-        {
-            return x;
-        }
-
-    }
-
-    class STL<T> where T : class
-    {
-        public void Push<V>(V x)
-        {
-            Console.WriteLine("Push : " + x);
-        }
-
-        public V Pop<V>(V x)
-        {
-            return x;
-        }
-    }
-
-
     internal class Program
     {
         static void Main(string[] args)
         {
-            #region 일반화 프로그래밍
+
+
+            //콜레션
+            //데이터를 저장하는 자료구조와 데이터를 처리하는
+            //알고리즘을 구조화하여 클래스로 나타낸 형태이다.
+
+            #region List
             /*
-            //일반화 프로그래밍
-            //데이터 형식에 의존하지 않고, 하나의 값이 여러 다른 데이터 타입들을
-            //가질 수 있는 기술에 중점을 두어 재사용성을 높일 수 있는 프로그래밍 방법
+            //List
+            List<int> list = new List<int>();
 
-            Machine machine = new Machine();
+            //Add()
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
 
-            machine.Driving(10);
-            machine.Driving(5.8346);
-            machine.Driving('W');
-            machine.Driving("string");
+            //Insert(,)
+            list.Insert(1, 66);
 
-            //형식 매개변수는 컴파일 시에 자료형을 결정한다.
-            int num1 = machine.Process(300);
-            float num2 = machine.Process(6.771f);
-            char num3 = machine.Process('Y');
-            string num4 = machine.Process("soccer");
+            //Remove()
+            list.Remove(3);
 
-            //형식 매개변수의 경우 박싱, 언박싱이 일어나지 않는다.
-            machine.Driving(num1);
-            machine.Driving(num2);
-            machine.Driving(num3);
-            machine.Driving(num4);
+            //RemoveAt()
+            list.RemoveAt(1);
 
-            STL<int> stack = new STL<int>();
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
+            int listSize = list.Count;
 
-            stack.Pop(1);
-            stack.Pop(2);
-            stack.Pop(3);
+            foreach (var ele in list)
+            {
+                Console.WriteLine(ele);
+            }
             */
             #endregion
 
-            //형식 범위 제한
-            //특정 형식으로 제한할 때 사용하는 키워드
+            #region ArrayList
+            /*
+            //ArrayList  --  vector랑 비슷
+            ArrayList arrayList = new ArrayList();
 
-            STL<string> queue = new STL<string>();
-            queue.Push("Game");
+            //Add()
+            arrayList.Add(1);
+            arrayList.Add(64.5f);
+            arrayList.Add('V');
+            arrayList.Add("under");
+            arrayList.Add(false);
 
-            //struct : 값 형식의 데이터만 가능하다.
-            //class : 참조 형식의 데이터만 가능하다.
-            //new() : 매개변수가 없는 생성자가 반드시 존재해야 가능하다.
-            //상위클래스(이름) : 해당 상위 클래스의 파생 클래스여야 가능하다.
-            //interface(이름) : 해당 인터페이스를 구현한 클래스여야 가능하다.
+            //Insert(,)
+            //저장하고 싶은 index, 저장할 값
+            arrayList.Insert(1,33.987);
+
+
+            //Remove()
+            arrayList.Remove(64.5f);
+
+            //RemoveAt()
+            arrayList.RemoveAt(0);
+
+            //size
+            int size = arrayList.Count;
+
+            foreach(var ele in arrayList)
+            {
+                Console.WriteLine(ele);
+            }
+
+            Console.WriteLine("arrayList의 크기 : " + size);
+            */
+            #endregion
+
+            #region Dictionary
+            /*
+            //Dictionary  --  hash 함수랑 비슷
+            Dictionary<string, int> item = new Dictionary<string, int>();
+
+            //Add()
+            //key(string), value(int)
+            item.Add("Sword", 10000);
+            item.Add("Hat", 1000);
+            item.Add("Shoes", 5000);
+            item.Add("Glove", 3000);
+
+            //Remove()
+            item.Remove("Shoes");
+
+            //Key 정보 탐색
+            bool findKey = item.ContainsKey("Hat");
+
+            //Value 정보 탐색
+            bool findValue = item.ContainsValue(1000);
+
+            Console.WriteLine(item["Sword"]);
+            */
+            #endregion
+
+            //Stack
+
+            //Queue
+
+
 
 
 
