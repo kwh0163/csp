@@ -9,113 +9,74 @@ using System.Collections.Generic;
 
 namespace ConsoleGame
 {
+
+    class Shop
+    {
+        virtual public void Punchase()
+        {
+            Console.WriteLine("구매");
+        }
+        virtual public void Sale()
+        {
+            Console.WriteLine("판매");
+        }
+    }
+
+    class Equipment : Shop
+    {
+        public override void Punchase()
+        {
+            Console.WriteLine("장비 구매");
+        }
+
+        public override void Sale()
+        {
+            Console.WriteLine("장비 판매");
+        }
+
+    }
+
+    class CashShop : Shop
+    {
+        public override void Punchase()
+        {
+            Console.WriteLine("캐쉬 구매");
+        }
+
+        public sealed override void Sale()
+        {
+            Console.WriteLine("캐쉬 판매");
+        }
+    }
+
+    class EventShop : CashShop
+    {
+        public override void Punchase()
+        {
+            Console.WriteLine("이벤트 구매");
+        }
+
+        /*
+        public override void Sale()
+        {
+            Console.WriteLine("캐쉬 판매");
+        }
+        */
+
+    }
+
+
     internal class Program
     {
         static void Main(string[] args)
         {
+            //sealed
+            //클래스 또는 메소드가 다른 클래스에서 
+            //상속되지 않도록 막아주는 키워드이다.
 
-
-            //콜레션
-            //데이터를 저장하는 자료구조와 데이터를 처리하는
-            //알고리즘을 구조화하여 클래스로 나타낸 형태이다.
-
-            #region List
-            /*
-            //List
-            List<int> list = new List<int>();
-
-            //Add()
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-            list.Add(5);
-
-            //Insert(,)
-            list.Insert(1, 66);
-
-            //Remove()
-            list.Remove(3);
-
-            //RemoveAt()
-            list.RemoveAt(1);
-
-            int listSize = list.Count;
-
-            foreach (var ele in list)
-            {
-                Console.WriteLine(ele);
-            }
-            */
-            #endregion
-
-            #region ArrayList
-            /*
-            //ArrayList  --  vector랑 비슷
-            ArrayList arrayList = new ArrayList();
-
-            //Add()
-            arrayList.Add(1);
-            arrayList.Add(64.5f);
-            arrayList.Add('V');
-            arrayList.Add("under");
-            arrayList.Add(false);
-
-            //Insert(,)
-            //저장하고 싶은 index, 저장할 값
-            arrayList.Insert(1,33.987);
-
-
-            //Remove()
-            arrayList.Remove(64.5f);
-
-            //RemoveAt()
-            arrayList.RemoveAt(0);
-
-            //size
-            int size = arrayList.Count;
-
-            foreach(var ele in arrayList)
-            {
-                Console.WriteLine(ele);
-            }
-
-            Console.WriteLine("arrayList의 크기 : " + size);
-            */
-            #endregion
-
-            #region Dictionary
-            /*
-            //Dictionary  --  hash 함수랑 비슷
-            Dictionary<string, int> item = new Dictionary<string, int>();
-
-            //Add()
-            //key(string), value(int)
-            item.Add("Sword", 10000);
-            item.Add("Hat", 1000);
-            item.Add("Shoes", 5000);
-            item.Add("Glove", 3000);
-
-            //Remove()
-            item.Remove("Shoes");
-
-            //Key 정보 탐색
-            bool findKey = item.ContainsKey("Hat");
-
-            //Value 정보 탐색
-            bool findValue = item.ContainsValue(1000);
-
-            Console.WriteLine(item["Sword"]);
-            */
-            #endregion
-
-            //Stack
-
-            //Queue
-
-
-
-
+            EventShop eventshop = new EventShop();
+            eventshop.Punchase();
+            eventshop.Sale();
 
         }
     }
